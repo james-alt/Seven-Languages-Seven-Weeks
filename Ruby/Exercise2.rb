@@ -50,7 +50,7 @@ puts "What phrase do you want to search for?"
 phrase = gets.chomp
 
 # Read the file and find all of the lines with the phrase in it
-File.readlines("DayTwo.txt").grep(/#{phrase}/).each {|txt| puts txt}
+File.readlines("Exercise2Text.txt").grep(/#{phrase}/).each {|txt| puts txt}
 
 # To add the line numbers => '=~' lets compare a string to a regular expression
-File.readlines("DayTwo.txt").each_with_index {|txt, index| puts "#{index}: #{txt}" if txt =~ /#{phrase}/}
+File.readlines("Exercise2Text.txt").each_with_index {|txt, index| puts "#{index}: #{txt}" if txt =~ /#{phrase}/}
